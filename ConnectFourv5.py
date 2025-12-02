@@ -492,6 +492,7 @@ class ConnectFour:
                 if new_score < value:
                     value = new_score
                     column = col
+                    bets = min(beta, value)
                 if alpha >= beta:
                     break
             return column, value
